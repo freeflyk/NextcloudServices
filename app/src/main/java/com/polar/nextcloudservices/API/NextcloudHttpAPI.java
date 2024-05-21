@@ -255,7 +255,7 @@ public class NextcloudHttpAPI implements INextcloudAbstractAPI {
             conn.setDoInput(true);
 
             String responseCode = Integer.toString(conn.getResponseCode());
-            Log.d(TAG, "--> GET "+ getEndpoint(mServiceSettings) + "/ocs/v2.php/apps/notifications/api/v2/notifications -- " + responseCode);
+            //Log.d(TAG, "--> GET "+ getEndpoint(mServiceSettings) + "/ocs/v2.php/apps/notifications/api/v2/notifications -- " + responseCode);
 
             //Log.d(TAG, buffer.toString());
             JSONObject response = readConnectionToJson(conn);

@@ -56,7 +56,7 @@ public class ActionsNotificationProcessor implements AbstractNotificationProcess
                     context,
                     requestCode,
                     intent,
-                    PendingIntent.FLAG_MUTABLE | PendingIntent.FLAG_UPDATE_CURRENT
+                    PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT
             );
         }else{
             return PendingIntent.getBroadcast(
